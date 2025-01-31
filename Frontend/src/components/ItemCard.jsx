@@ -2,7 +2,7 @@ import { useState ,useEffect} from "react";
 import { api } from "../config";
 import noImage from "../assets/no-image.png"
 import axios from "axios";
-
+import { Link } from 'react-router-dom';
 
 export default function Itemcard(props) {
   const [image, setImage] = useState(noImage);
@@ -21,7 +21,7 @@ export default function Itemcard(props) {
 
 
   return (
-    <a href={"/find/details/" + props.id} data-aos="fade-up">
+    <Link to={`/find/details/${props.id}`} data-aos="fade-up">
       <div className="card">
         <div className="card-img">
           <img
@@ -34,6 +34,6 @@ export default function Itemcard(props) {
           <p>{props.description}</p>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
