@@ -11,7 +11,7 @@ function Home(){
         </div>
         <div className="hero">
           <h1>Lost and Found</h1>
-          <Link href="/find">
+          <Link to="/find">
             <button>Find item</button>
           </Link>
         </div>
