@@ -26,8 +26,7 @@ function Find() {
 
   useEffect(() => {
     axios
-      // .get(`${api}/item`)
-      .get('https://lostandfound-api.onrender.com/item')
+      .get(`${api}/item`)
       .then((res) => {
         setItem(res.data.data);
         setLoading(false);
