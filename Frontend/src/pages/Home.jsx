@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar"
 import About from "../components/About";
+import { Link } from "react-router-dom";
 import ParticlesBackground from "../components/Particle";
 function Home(){
     return (
@@ -10,9 +11,9 @@ function Home(){
         </div>
         <div className="hero">
           <h1>Lost and Found</h1>
-          <a href="/find">
+          <Link href="/find">
             <button>Find item</button>
-          </a>
+          </Link>
         </div>
         <About />
       </main>
