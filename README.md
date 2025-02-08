@@ -1,1 +1,1 @@
-Website to manage lost things
+MERN website to search and find lost objects.
